@@ -18,5 +18,5 @@ type Room struct {
 }
 
 func (r Room) PrintRoom() {
-  fmt.Println("Name:", r.Name)
+  fmt.Println("Name:", r.RoomName)
 }

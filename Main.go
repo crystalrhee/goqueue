@@ -10,9 +10,9 @@ import (
   "math/rand"
 )
 
-const Rooms map[string]Models.Room
+const Rooms = map[string]Models.Room
 const KEY_LENGTH = 10
-const letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+const letterRunes = []string("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 func uniqueKey(key) {
   recurse := false
@@ -23,8 +23,7 @@ func uniqueKey(key) {
   }
   if (recurse) {
     return uniqueKey(genRoomKey(KEY_LENGTH))
-  }
-  else {
+  } else {
     return key
   }
 }
@@ -41,7 +40,7 @@ func createRoom(w http.ResponseWriter, r *http.Request) {
   // Creates user and room with a randomly generated key
   u := Models.User{ Name: r.UserName, ConnectedAccount: true}
   key := genRoomKey(KEY_LENGTH)
-  Rooms[key] = Models.Room{ Name: r.RoomName, Password: r.RoomPassword, Users: []Models.User{u}
+  Rooms[key] = Models.Room{ Name: r.RoomName, Password: r.RoomPassword, Users: []Models.User{u},
     SpotifyPassword: r.SpotifyPassword, SpotfiyUsername: r.SpotfiyUsername}
 
   roomCookie := http.Cookie{ Name: "goqueueRoomKey", Value: key}
@@ -60,8 +59,7 @@ func leaveRoom(w http.ResponseWriter, r *http.Request) {
   users := Rooms[r.RoomKey].Users
   if len(users) == 1 {
     deleteRoom(w, r)
-  }
-  else {
+  } else {
     for i := range users {
       if users[i].Name == r.UserName {
         users[i] = users[0]
@@ -81,7 +79,6 @@ func getRoom(w http.ResponseWriter, r *http.Request) {
 func addUserToRoom(w http.ResponseWriter, r *http.Request) {
   user = Models.User{ Name: r.UserName, ConnectedAccount: false}
   append(Rooms[r.RoomKey].Users, user)
-  getRoom
 }
 
 func main() {
