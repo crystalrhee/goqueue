@@ -3,29 +3,37 @@
 @import "_reset.scss"; // Include the general HTML reset
 @import "_keyframes.scss"; // keyframe animations, only include if you'll be using keyframe animations
 
-/* Put all your main styles below here */
-/* When making styles, make sure to keep in mind a mobile-first mentality. All your main code here should work 100% on mobile. Your media queries should be for upscaling from a mobile size.*/
-
-/* Use the media queries mixins as inline media queries instead of giant media query chunks, like this:
-
-p {
-	font-size: 16px;
-	
-	@include desktop {
-		font-size: 20px;
-	}
-
-	@include tablet {
-		font-size: 18px;
-	}
-
-	@include mobile {
-		font-size: 12px;
-	}
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
 }
-*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit; 
+}
+img,
+iframe {
+	vertical-align: middle;
+	max-width: 100%; 
+}
+body {
+	background-color: $primary;
+}
+ul,li { 
+	list-style-type: none;
+	list-style-position:inside;
+	margin:0;
+	padding:0; 
+}
 
+h1, h2, h3, p {
+	color: $tertiary;
+}
 
-/*
-Include any other files split out by section here
-*/
+a {
+	color: $tertiary;
+}
