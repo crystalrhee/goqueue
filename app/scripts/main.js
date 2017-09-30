@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
+  $('a').on('click', function(event) {
+    if (this.hash !== '') {
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
@@ -11,16 +11,22 @@ $(document).ready(function(){
     }
   });
 
+  // hamburger menu
   $('.header .menu').on('click', function() {
     if($('.header').hasClass('open')) {
-      console.log("close");
+      console.log('close');
       $('.header').removeClass('open');
     } else {
-      console.log("open");
+      console.log('open');
       $('.header').addClass('open');
     }
 
     return false;
+  });
+
+  // add class to dancing gifs
+  $('#login').click(function(){
+    $('#dance').addClass('active');
   });
 });
 

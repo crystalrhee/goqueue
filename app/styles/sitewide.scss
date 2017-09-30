@@ -37,3 +37,10 @@ h1, h2, h3, p {
 a {
 	color: $tertiary;
 }
+
+section#content {
+	background: $primary-sub;
+	height: 500px;
+	margin: 5% auto;
+	width: 80%;
+}

@@ -1,80 +1,65 @@
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
 
 @-webkit-keyframes Bars {
-	0% {
-		opacity: .35;
-		height: 2px; 
-	}
-	50% {
-		opacity: 1;       
-		height: 30px;        
-	}
-	100% {
-		opacity: .35;
-		height: 2px;
-	}
+	0% {opacity: .35; height: 2px; }
+	50% {opacity: 1; height: 30px;}
+	100% {opacity: .35; height: 2px;}
 }
 
 @-moz-keyframes Bars {
-	0% {
-		opacity: .35;
-		height: 2px; 
-	}
-	50% {
-		opacity: 1;       
-		height: 30px;        
-	}
-	100% {
-		opacity: .35;
-		height: 2px;
-	}
+	0% {opacity: .35; height: 2px; }
+	50% {opacity: 1; height: 30px;}
+	100% {opacity: .35; height: 2px;}
 }
 
 @keyframes Bars {
-	0% {
-		opacity: .35;
-		height: 2px; 
-	}
-	50% {
-		opacity: 1;       
-		height: 30px;        
-	}
-	100% {
-		opacity: .35;
-		height: 2px;
-	}
+	0% {opacity: .35; height: 2px;}
+	50% {opacity: 1; height: 30px;}
+	100% {opacity: .35; height: 2px;}
+}
+
+@-webkit-keyframes Left {
+	100%{left: 20%;}
+}
+
+@-moz-keyframes Left {
+	100%{ left: 20%;}
+}
+
+@keyframes Left {
+	100%{left: 20%;}
+}
+
+@-webkit-keyframes Right {
+	100%{left: 80%;}
+}
+
+@-moz-keyframes Right {
+	100%{left: 80%;}
+}
+
+@keyframes Right {
+	100%{left: 80%;}
+}
+
+@-webkit-keyframes shadow-pulse {
+	0% {-webkit-box-shadow: 0 0 20px rgba(129,183,26,0);}
+	50% {-webkit-box-shadow: 0 0 20px rgba(129,183,26,1);}
+	100% {-webkit-box-shadow: 0 0 20px rgba(129,183,26,0);}
 }
