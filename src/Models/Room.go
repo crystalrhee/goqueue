@@ -9,11 +9,14 @@ type IRoom interface {
 }
 
 type Room struct {
-  Users     []User
-  Name      string
-  Password  string
+
+  Users           []User
+  RoomName        string
+  RoomPassword    string
+  SpotfiyUsername string
+  SpotifyPassword string
 }
 
 func (r Room) PrintRoom() {
-    fmt.Println("Name:", r.Name)
+  fmt.Println("Name:", r.Name)
 }
