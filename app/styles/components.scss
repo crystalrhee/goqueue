@@ -2,33 +2,31 @@
 @import "_keyframes.scss";
 @import "_mixins.scss";
 
-#dance {
-  .container {
-    margin: 0 auto;
-    width: 40%;
+.container {
+  margin: 0 auto;
+  width: 40%;
 
-    form{
+  form{
+    padding:0;
+    border-radius: 4px;
+    background-color: $primary;
+    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.5);
+
+    fieldset{
+      display: block;
+      width:100%;
+      margin:0 auto;
+      padding:1em 0 1em 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+    fieldset:first-child{
+      margin-bottom:0;
+    }
+    fieldset:last-child{
+      border-bottom: none;
+      margin-top:0;
       padding:0;
-      border-radius: 4px;
-      background-color: $primary;
-      box-shadow: 0 2px 5px 0px rgba(0,0,0,0.5);
-
-      fieldset{
-        display: block;
-        width:100%;
-        margin:0 auto;
-        padding:1em 0 1em 0;
-        border: none;
-        border-bottom: 1px solid #ccc;
-      }
-      fieldset:first-child{
-        margin-bottom:0;
-      }
-      fieldset:last-child{
-        border-bottom: none;
-        margin-top:0;
-        padding:0;
-      }
     }
   }
 }
@@ -58,11 +56,10 @@ input[type="submit"]{
   margin: 0 auto;
   padding: 7px 5px 5px 5px;
   background-color:$primary;
-  font-family: helvetica, arial, sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   text-align:center;
-  color:#81b71a;
+  color:$tertiary-sub;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border:none;
