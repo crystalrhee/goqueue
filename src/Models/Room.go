@@ -14,6 +14,6 @@ type Room struct {
   Password  string
 }
 
-func (r Room) printRoom() {
+func (r Room) PrintRoom() {
     fmt.Println("Name:", r.Name)
 }

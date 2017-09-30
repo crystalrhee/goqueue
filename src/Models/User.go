@@ -6,15 +6,9 @@ type IUser interface {
   printPermissions()
 }
 
-type Permissions struct {
-  Name              string
-  Muted             bool
-  ConnectedAccount  bool
-  CanSkip           bool
-}
-
 type User struct {
-  Permissions
+  Name string
+  ConnectedAccount bool
 }
 
 type Moderator struct {

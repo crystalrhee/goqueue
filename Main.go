@@ -7,17 +7,12 @@ package main
 import (
 	"net/http"
   "Models"
-  "fmt"
 )
 
-type Page struct {
-	Title string
-	Body  []byte
-}
-
 func createRoom(w http.ResponseWriter, r *http.Request) {
-  room = Models.Room{ Models.Users: []User{u}, Name: "The Doom Room", Password: "you can't escape the doom room" }
-  room.printRoom()
+  user := Models.User{ Name: "Jason", ConnectedAccount: true }
+  room := Models.Room{ Users: []Models.User{user}, Name: "The Doom Room", Password: "you can't escape the doom room" }
+  room.PrintRoom()
 }
 
 func main() {
@@ -25,7 +20,6 @@ func main() {
 	http.Handle("/test/", http.StripPrefix("/test/", fs))
 
 	http.HandleFunc("/room/create/", createRoom)
-  http.HandleFunc("/room/delete/", createRoom)
 
 	http.ListenAndServe(":8080", nil)
 }
