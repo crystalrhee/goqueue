@@ -1,0 +1,189 @@
+/* Variables
+=============================================*/
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes Bars {
+  0% {
+    opacity: .35;
+    height: 2px;
+  }
+  50% {
+    opacity: 1;
+    height: 30px;
+  }
+  100% {
+    opacity: .35;
+    height: 2px;
+  }
+}
+
+@keyframes Bars {
+  0% {
+    opacity: .35;
+    height: 2px;
+  }
+  50% {
+    opacity: 1;
+    height: 30px;
+  }
+  100% {
+    opacity: .35;
+    height: 2px;
+  }
+}
+
+/* Mixins
+=============================================*/
+main {
+  background: linear-gradient(-45deg, #bbd9e8, #4d9fbf, #275974, #092024);
+  background-size: 300% 300%;
+  height: 680px;
+  width: 100%;
+  -webkit-animation: Gradient 60s ease infinite;
+  animation: Gradient 60s ease infinite;
+}
+
+main header {
+  height: 70px;
+  line-height: 70px;
+  vertical-align: middle;
+}
+
+main header a#bars {
+  left: 20px;
+  position: absolute;
+  top: 7%;
+  width: 120px;
+}
+
+main header a#bars.active {
+  display: block;
+}
+
+main header a#bars.active .bar {
+  background: #edfcff;
+  bottom: 1px;
+  height: 2px;
+  position: absolute;
+  width: 20px;
+  -webkit-animation: Bars 0ms -800ms linear infinite alternate;
+          animation: Bars 0ms -800ms linear infinite alternate;
+}
+
+main header a#bars.active .bar:nth-child(1) {
+  left: 0px;
+  -webkit-animation-duration: 574ms;
+          animation-duration: 574ms;
+}
+
+main header a#bars.active .bar:nth-child(2) {
+  left: 20px;
+  -webkit-animation-duration: 533ms;
+          animation-duration: 533ms;
+}
+
+main header a#bars.active .bar:nth-child(3) {
+  left: 40px;
+  -webkit-animation-duration: 507ms;
+          animation-duration: 507ms;
+}
+
+main header a#bars.active .bar:nth-child(4) {
+  left: 60px;
+  -webkit-animation-duration: 558ms;
+          animation-duration: 558ms;
+}
+
+main header a#bars.active .bar:nth-child(5) {
+  left: 80px;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+}
+
+main header a#bars.active .bar:nth-child(6) {
+  left: 100px;
+  -webkit-animation-duration: 527ms;
+          animation-duration: 527ms;
+}
+
+main header a#bars .bar {
+  background: #edfcff;
+  bottom: 1px;
+  height: 2px;
+  position: absolute;
+  width: 20px;
+}
+
+main header a#bars .bar:nth-child(1) {
+  left: 0px;
+}
+
+main header a#bars .bar:nth-child(2) {
+  left: 20px;
+}
+
+main header a#bars .bar:nth-child(3) {
+  left: 40px;
+}
+
+main header a#bars .bar:nth-child(4) {
+  left: 60px;
+}
+
+main header a#bars .bar:nth-child(5) {
+  left: 80px;
+}
+
+main header a#bars .bar:nth-child(6) {
+  left: 100px;
+}
+
+main header a#bars .bar:nth-child(7) {
+  left: 120px;
+}
+
+main header a#bars .bar:nth-child(8) {
+  left: 140px;
+}
+
+main header a#bars .bar:nth-child(9) {
+  left: 160px;
+}
+
+main header a#bars .bar:nth-child(10) {
+  left: 180px;
+}
+
+main header ul.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin: 15px;
+}
+
+main header ul.nav li {
+  margin: 0 20px;
+}
