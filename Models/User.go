@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
+type IUser interface {
+  printPermissions()
+}
+
 type Permissions struct {
   Name              string
   Muted             bool
   ConnectedAccount  bool
   CanSkip           bool
-}
-
-type IUser interface {
-  printPermissions()
 }
 
 type User struct {
@@ -22,11 +22,10 @@ type Moderator struct {
 }
 
 func (u User) printPermissions() {
-  for
-    return fmt.Println("%s: %s", part.Name, part.Description)
+    fmt.Println("Name:", u.Name)
 }
 
 func main() {
-    fmt.Printf("hello, world\n")
+    u := User{ Permissions { Name: "Jason", Muted: true, ConnectedAccount: true, CanSkip: true }}
+    u.printPermissions()
 }
-nn
