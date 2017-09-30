@@ -17,9 +17,3 @@ type Room struct {
 func (r Room) printRoom() {
     fmt.Println("Name:", r.Name)
 }
-
-func main() {
-    u := User{ Permissions { Name: "Jason", Muted: true, ConnectedAccount: true, CanSkip: true }}
-    r := Room{ Users: []User{u}, Name: "The Doom Room", Password: "you can't escape the doom room" }
-    r.printRoom()
-}

@@ -6,6 +6,8 @@ package main
 
 import (
 	"net/http"
+  "Models"
+  "fmt"
 )
 
 type Page struct {
@@ -13,12 +15,13 @@ type Page struct {
 	Body  []byte
 }
 
-func testHandler(w http.ResponseWriter, r *http.Request) {
-
+func createRoom(w http.ResponseWriter, r *http.Request) {
+  room = Models.Room{ Model.Users: []User{u}, Name: "The Doom Room", Password: "you can't escape the doom room" }
+  room.printRoom()
 }
 
 func main() {
-  fs := http.FileServer(http.Dir("FrontEnd"))
+  fs := http.FileServer(http.Dir("frontend"))
 	http.Handle("/test/", http.StripPrefix("/test/", fs))
 
 	http.HandleFunc("/createRoom/", testHandler)
