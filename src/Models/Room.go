@@ -8,7 +8,7 @@ type IRoom interface {
 }
 
 type Room struct {
-  Users     []User
+  Users     []IUser
   Name      string
   Password  string
 }
@@ -19,6 +19,6 @@ func (r Room) printRoom() {
 
 func main() {
     u := User{ Permissions { Name: "Jason", Muted: true, ConnectedAccount: true, CanSkip: true }}
-    r := Room{ Users: [1]Users{u}, Name: "The Doom Room", Password: "you can't escape the doom"}
+    r := Room{ Users: [1]Users{u}, Name: "The Doom Room", Password: "you can't escape the doom room" }
     r.printPermissions()
 }
