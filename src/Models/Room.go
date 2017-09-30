@@ -1,24 +1,25 @@
-package main
+package Models
 
-import "fmt"
-import "User.go"
+import (
+  "fmt"
+)
 
 type IRoom interface {
   printPermissions()
 }
 
 type Room struct {
-  Users     []IUser
+  Users     []User
   Name      string
   Password  string
 }
 
 func (r Room) printRoom() {
-    fmt.Println("Name:", u.Name)
+    fmt.Println("Name:", r.Name)
 }
 
 func main() {
     u := User{ Permissions { Name: "Jason", Muted: true, ConnectedAccount: true, CanSkip: true }}
-    r := Room{ Users: [1]Users{u}, Name: "The Doom Room", Password: "you can't escape the doom room" }
-    r.printPermissions()
+    r := Room{ Users: []User{u}, Name: "The Doom Room", Password: "you can't escape the doom room" }
+    r.printRoom()
 }

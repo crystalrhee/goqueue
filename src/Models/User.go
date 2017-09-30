@@ -1,4 +1,4 @@
-package main
+package Models
 
 import "fmt"
 
@@ -23,9 +23,4 @@ type Moderator struct {
 
 func (u User) printPermissions() {
     fmt.Println("Name:", u.Name)
-}
-
-func main() {
-    u := User{ Permissions { Name: "Jason", Muted: true, ConnectedAccount: true, CanSkip: true }}
-    u.printPermissions()
 }
