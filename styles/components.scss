@@ -2,31 +2,41 @@
 @import "_keyframes.scss";
 @import "_mixins.scss";
 
+.profile-image {
+  border-radius: 50%;
+  width: 50px;
+}
+
 .container {
   margin: 0 auto;
-  width: 40%;
+  opacity: 0;
+  width: 30%;
 
-  form{
-    padding:0;
-    border-radius: 4px;
-    background-color: $primary;
-    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.5);
+  &.active {
+    opacity: 1;
 
-    fieldset{
-      display: block;
-      width:100%;
-      margin:0 auto;
-      padding:1em 0 1em 0;
-      border: none;
-      border-bottom: 1px solid #ccc;
-    }
-    fieldset:first-child{
-      margin-bottom:0;
-    }
-    fieldset:last-child{
-      border-bottom: none;
-      margin-top:0;
+    form{
       padding:0;
+      border-radius: 4px;
+      background-color: $primary;
+      box-shadow: 0 2px 5px 0px rgba(0,0,0,0.5);
+
+      fieldset{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1em 0 1em 0;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+      fieldset:first-child{
+        margin-bottom:0;
+      }
+      fieldset:last-child{
+        border-bottom: none;
+        margin-top:0;
+        padding:0;
+      }
     }
   }
 }
@@ -70,7 +80,7 @@ input[type="submit"]{
   transition: all 0.5s ease-out;
 }
 input[type="submit"]:hover{
-  background-color: $primary-sub;
+  background-color: rgba(239, 136, 83,0.5);
   text-shadow: none;
 }
 input::-webkit-input-placeholder{
@@ -88,9 +98,14 @@ input:focus::-webkit-input-placeholder{
 input[type="text"]:focus,input[type="text"]:active,[type="password"]:focus,input[type="password"]:active{
   outline:0;
   -webkit-appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: none; 
   border-image:none;
   -moz-box-shadow: 0 0 20px rgba(239, 136, 83,0.5);
   box-shadow: 0 0 20px rgba(239, 136, 83,0.5);
-  -webkit-animation: shadow-pulse 3s infinite ease-in-out;
+  animation: pulse 3s ease-in-out infinite;
+
+}
+
+.list {
+  display: block;
 }

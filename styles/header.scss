@@ -5,7 +5,8 @@
 main {
 	background: linear-gradient(-45deg, $secondary-sub, $secondary, $primary-sub, $primary);
 	background-size: 300% 300%;
-	height: 680px;
+	min-height: 680px;
+	// height: 100vh;
 	position: relative;
 	width: 100%;
 	-webkit-animation: Gradient 60s ease infinite;
@@ -159,5 +160,4 @@ main {
 			display: none;
 		}
 	}
-
 }

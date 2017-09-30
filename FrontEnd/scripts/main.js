@@ -27,6 +27,7 @@ $(document).ready(function(){
   // add class to dancing gifs
   $('#login').click(function(){
     $('#dance').addClass('active');
+    $('.container').addClass('active');
   });
 });
 

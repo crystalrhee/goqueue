@@ -58,8 +58,8 @@
 	100%{left: 80%;}
 }
 
-@-webkit-keyframes shadow-pulse {
-	0% {-webkit-box-shadow: 0 0 20px rgba(129,183,26,0);}
-	50% {-webkit-box-shadow: 0 0 20px rgba(129,183,26,1);}
-	100% {-webkit-box-shadow: 0 0 20px rgba(129,183,26,0);}
+@-webkit-keyframes pulse {
+	0% {-webkit-box-shadow: 0 0 20px rgba(239, 136, 83, 0);}
+	50% {-webkit-box-shadow: 0 0 20px rgba(239, 136, 83, 1);}
+	100% {-webkit-box-shadow: 0 0 20px rgba(239, 136, 83, 0);}
 }

@@ -81,20 +81,20 @@
   100% {
     left: 80%; } }
 
-@-webkit-keyframes shadow-pulse {
+@-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 20px rgba(129, 183, 26, 0); }
+    -webkit-box-shadow: 0 0 20px rgba(239, 136, 83, 0); }
   50% {
-    -webkit-box-shadow: 0 0 20px #81b71a; }
+    -webkit-box-shadow: 0 0 20px #ef8853; }
   100% {
-    -webkit-box-shadow: 0 0 20px rgba(129, 183, 26, 0); } }
+    -webkit-box-shadow: 0 0 20px rgba(239, 136, 83, 0); } }
 
 /* Mixins
 =============================================*/
 main {
   background: linear-gradient(-45deg, #bbd9e8, #4d9fbf, #275974, #092024);
   background-size: 300% 300%;
-  height: 680px;
+  min-height: 680px;
   position: relative;
   width: 100%;
   -webkit-animation: Gradient 60s ease infinite;
