@@ -23,7 +23,7 @@ main {
 			width: 250px;
 		}
 
-		a#bars {
+		#bars {
 			left: 20px;
 			position: absolute;
 			top: 7%;
@@ -136,6 +136,9 @@ main {
 			left: 60%;
 			position: absolute;
 			transform: translate(-50%, 0);
+			@include mobile {
+				display: none;
+			}
 		}
 
 		img#goku {
@@ -143,6 +146,9 @@ main {
 			left: 40%;
 			position:absolute;
 			transform: translate(-50%, 0);
+			@include mobile {
+				display: none;
+			}
 		}
 
 		&.active {
@@ -161,8 +167,6 @@ main {
 			}
 		}
 
-		@include mobile {
-			display: none;
-		}
+		
 	}
 }

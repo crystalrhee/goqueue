@@ -26,8 +26,19 @@ $(document).ready(function(){
 
   // add class to dancing gifs
   $('#join').click(function(){
+    $('form#create').css('display', 'none');
+    $('form#create').removeClass('active');
+    $('form#join').css('display', 'block');
     $('#dance').addClass('active');
-    $('.container').addClass('active');
+    $('form#join').addClass('active');
+  });
+
+  $('#create').click(function(){
+    $('form#join').css('display', 'none');
+    $('form#join').removeClass('active');
+    $('form#create').css('display', 'block');
+    $('#dance').addClass('active');
+    $('form#create').addClass('active');
   });
 });
 

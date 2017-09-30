@@ -38,6 +38,19 @@ a {
 	color: $tertiary;
 }
 
+.egg {
+    opacity: 0.05;
+    position: absolute;
+    right: 0;
+    top: -10%;
+    width: 60px;
+    z-index: -1;
+
+    &:hover {
+    	opacity: 0.6;
+    }
+}
+
 section#content {
 	height: 500px;
 	margin: 5% auto;
@@ -83,4 +96,10 @@ section#content {
 			}
 		}
 	}
+}
+
+section#about {
+	height: 100vh;
+	margin: 5% auto;
+	width: 80%;
 }

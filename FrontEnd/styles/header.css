@@ -107,63 +107,63 @@ main {
     main header img.logo {
       filter: invert(100%);
       width: 250px; }
-    main header a#bars {
+    main header #bars {
       left: 20px;
       position: absolute;
       top: 7%;
       width: 120px; }
-      main header a#bars.active {
+      main header #bars.active {
         display: block; }
-        main header a#bars.active .bar {
+        main header #bars.active .bar {
           background: #edfcff;
           bottom: 1px;
           height: 2px;
           position: absolute;
           width: 20px;
           animation: Bars 0ms -800ms linear infinite alternate; }
-        main header a#bars.active .bar:nth-child(1) {
+        main header #bars.active .bar:nth-child(1) {
           left: 0px;
           animation-duration: 574ms; }
-        main header a#bars.active .bar:nth-child(2) {
+        main header #bars.active .bar:nth-child(2) {
           left: 20px;
           animation-duration: 533ms; }
-        main header a#bars.active .bar:nth-child(3) {
+        main header #bars.active .bar:nth-child(3) {
           left: 40px;
           animation-duration: 507ms; }
-        main header a#bars.active .bar:nth-child(4) {
+        main header #bars.active .bar:nth-child(4) {
           left: 60px;
           animation-duration: 558ms; }
-        main header a#bars.active .bar:nth-child(5) {
+        main header #bars.active .bar:nth-child(5) {
           left: 80px;
           animation-duration: 500ms; }
-        main header a#bars.active .bar:nth-child(6) {
+        main header #bars.active .bar:nth-child(6) {
           left: 100px;
           animation-duration: 527ms; }
-      main header a#bars .bar {
+      main header #bars .bar {
         background: #edfcff;
         bottom: 1px;
         height: 2px;
         position: absolute;
         width: 20px; }
-      main header a#bars .bar:nth-child(1) {
+      main header #bars .bar:nth-child(1) {
         left: 0px; }
-      main header a#bars .bar:nth-child(2) {
+      main header #bars .bar:nth-child(2) {
         left: 20px; }
-      main header a#bars .bar:nth-child(3) {
+      main header #bars .bar:nth-child(3) {
         left: 40px; }
-      main header a#bars .bar:nth-child(4) {
+      main header #bars .bar:nth-child(4) {
         left: 60px; }
-      main header a#bars .bar:nth-child(5) {
+      main header #bars .bar:nth-child(5) {
         left: 80px; }
-      main header a#bars .bar:nth-child(6) {
+      main header #bars .bar:nth-child(6) {
         left: 100px; }
-      main header a#bars .bar:nth-child(7) {
+      main header #bars .bar:nth-child(7) {
         left: 120px; }
-      main header a#bars .bar:nth-child(8) {
+      main header #bars .bar:nth-child(8) {
         left: 140px; }
-      main header a#bars .bar:nth-child(9) {
+      main header #bars .bar:nth-child(9) {
         left: 160px; }
-      main header a#bars .bar:nth-child(10) {
+      main header #bars .bar:nth-child(10) {
         left: 180px; }
     main header ul.nav {
       display: flex;
@@ -186,11 +186,17 @@ main {
       left: 60%;
       position: absolute;
       transform: translate(-50%, 0); }
+      @media (max-width: 679px) {
+        main #dance img#vegeta {
+          display: none; } }
     main #dance img#goku {
       bottom: 0;
       left: 40%;
       position: absolute;
       transform: translate(-50%, 0); }
+      @media (max-width: 679px) {
+        main #dance img#goku {
+          display: none; } }
     main #dance.active img#vegeta {
       animation: Right 1s linear;
       animation-fill-mode: forwards;
@@ -201,6 +207,3 @@ main {
       animation-fill-mode: forwards;
       bottom: 0;
       position: absolute; }
-    @media (max-width: 679px) {
-      main #dance {
-        display: none; } }

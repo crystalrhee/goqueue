@@ -388,6 +388,16 @@ h1, h2, h3, p {
 a {
   color: #edfcff; }
 
+.egg {
+  opacity: 0.05;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  width: 60px;
+  z-index: -1; }
+  .egg:hover {
+    opacity: 0.6; }
+
 section#content {
   height: 500px;
   margin: 5% auto;
@@ -422,3 +432,8 @@ section#content {
       section#content .users .user .name {
         display: inline-block;
         font-size: 14px; }
+
+section#about {
+  height: 100vh;
+  margin: 5% auto;
+  width: 80%; }

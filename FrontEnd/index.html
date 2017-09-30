@@ -28,29 +28,44 @@
       <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
       <ul class="nav">
         <li><a href="room.html">Room</a></li>
-        <li><a href="#" id="login">Login</a></li>
         <li><a href="#">Profile</a></li>
       </ul>
     </header>
 
     <div class="btn-container">
-      <a href="" class="btn" id="create">Create</a>
+      <a href="#" class="btn" id="create">Create</a>
       <a href="#" class="btn" id="join">Join</a>  
     </div>  
 
     <div id="dance">
       <img src="images/vegeta.gif" alt="Dancing Vegeta" id="vegeta">
       <div class="container">
-        <img src="images/golang.png" alt="golang">
-        <form method="post" name="auth" action="#" id="auth">
+
+        <form method="post" name="create" action="#" id="create">
           <fieldset>
             <input id="username" name="username" type="text" placeholder="Username">
           </fieldset>
           <fieldset>
-            <input id="room" name="room" type="room" placeholder="Room">
+            <input id="password" name="password" type="password" placeholder="Password">
           </fieldset>
           <fieldset>
-            <input type="submit" name='submit' value="Sign In" />
+            <input id="roomname" name="roomname" type="roomname" placeholder="Room Name">
+          </fieldset>
+          <fieldset>
+            <input type="submit" name='submit' value="Create" />
+          </fieldset>
+        </form>
+
+        <img src="images/golang.png" alt="golang" class="egg">
+        <form method="post" name="join" action="#" id="join">
+          <fieldset>
+            <input id="username" name="username" type="text" placeholder="Username">
+          </fieldset>
+          <fieldset>
+            <input id="room" name="room" type="room" placeholder="Room Link">
+          </fieldset>
+          <fieldset>
+            <input type="submit" name='submit' value="Join" />
           </fieldset>
         </form>
       </div>
@@ -58,15 +73,22 @@
     </div>
   </main>
 
-  <section id="content">
-    <h1>HELLO</h1>
-  </section>
+  <h1>HELLO</h1>
+  <p>Technologies Used</p>
+  <ul>
+    <li><p>GoLang</p></li>
+    <li><p>HTML</p></li>
+    <li><p>CSS</p></li>
+    <li><p>JQuery</p></li>
+    <li><p>Spotify API</p></li>
+  </ul>
+</section>
 
-  <footer>
+<footer>
 
-  </footer>
+</footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="scripts/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
