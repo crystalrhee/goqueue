@@ -7,13 +7,49 @@
   width: 50px;
 }
 
+.btn-container {
+  margin: 0 30%;
+  position: absolute;
+  top: 20%;
+  width: 40%;
+  z-index: 1;
+
+  .btn {
+    background-color: $tertiary-sub;
+    border: 1px solid #ccc;
+    color: $tertiary;
+    display: block;
+    font-size: 1.3em;
+    height:50px;
+    line-height: 50px;
+    margin:20px auto;
+    text-align:center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align:middle;
+    width: 100%;
+
+    &:hover {
+      background-color: rgba(239, 136, 83,0.5);
+    }
+  }
+}
+
 .container {
   margin: 0 auto;
   opacity: 0;
+  position: relative;
+  top: 50%;
   width: 30%;
 
   &.active {
     opacity: 1;
+    -webkit-transition: all 0.5s 0.8s ease-out;
+    -moz-transition: all 0.5s 0.8s ease-out;
+    -o-transition: all 0.5s 0.8s ease-out;
+    transition: all 0.5s 0.8s ease-out;
 
     form{
       padding:0;

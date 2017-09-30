@@ -25,14 +25,7 @@
 <body>
   <main>
     <header>
-      <a href="#" id="bars" class="active">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </a>
+      <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
       <ul class="nav">
         <li><a href="room.html">Room</a></li>
         <li><a href="#" id="login">Login</a></li>
@@ -40,15 +33,21 @@
       </ul>
     </header>
 
+    <div class="btn-container">
+      <a href="" class="btn" id="create">Create</a>
+      <a href="#" class="btn" id="join">Join</a>  
+    </div>  
+
     <div id="dance">
       <img src="images/vegeta.gif" alt="Dancing Vegeta" id="vegeta">
       <div class="container">
+        <img src="images/golang.png" alt="golang">
         <form method="post" name="auth" action="#" id="auth">
           <fieldset>
             <input id="username" name="username" type="text" placeholder="Username">
           </fieldset>
           <fieldset>
-            <input id="password" name="password" type="password" placeholder="Password">
+            <input id="room" name="room" type="room" placeholder="Room">
           </fieldset>
           <fieldset>
             <input type="submit" name='submit' value="Sign In" />
