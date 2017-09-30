@@ -31,33 +31,33 @@ main {
 					bottom: 1px;
 					height: 2px;
 					position: absolute;
-					width: 20px;     
+					width: 20px;
 					animation: Bars 0ms -800ms linear infinite alternate;
 				}
 
-				.bar:nth-child(1)  { 
-					left: 0px; 
-					animation-duration: 574ms; 
+				.bar:nth-child(1)  {
+					left: 0px;
+					animation-duration: 574ms;
 				}
-				.bar:nth-child(2)  { 
-					left: 20px; 
-					animation-duration: 533ms; 
+				.bar:nth-child(2)  {
+					left: 20px;
+					animation-duration: 533ms;
 				}
-				.bar:nth-child(3)  { 
-					left: 40px; 
-					animation-duration: 507ms; 
+				.bar:nth-child(3)  {
+					left: 40px;
+					animation-duration: 507ms;
 				}
-				.bar:nth-child(4)  { 
-					left: 60px; 
-					animation-duration: 558ms; 
+				.bar:nth-child(4)  {
+					left: 60px;
+					animation-duration: 558ms;
 				}
-				.bar:nth-child(5)  { 
-					left: 80px; 
-					animation-duration: 500ms; 
+				.bar:nth-child(5)  {
+					left: 80px;
+					animation-duration: 500ms;
 				}
-				.bar:nth-child(6)  { 
-					left: 100px; 
-					animation-duration: 527ms; 
+				.bar:nth-child(6)  {
+					left: 100px;
+					animation-duration: 527ms;
 				}
 			}
 
@@ -68,34 +68,34 @@ main {
 				position: absolute;
 				width: 20px;
 			}
-			.bar:nth-child(1)  { 
-				left: 0px; 
+			.bar:nth-child(1)  {
+				left: 0px;
 			}
-			.bar:nth-child(2)  { 
-				left: 20px; 
+			.bar:nth-child(2)  {
+				left: 20px;
 			}
-			.bar:nth-child(3)  { 
-				left: 40px; 
+			.bar:nth-child(3)  {
+				left: 40px;
 			}
-			.bar:nth-child(4)  { 
+			.bar:nth-child(4)  {
 				left: 60px;
 			}
-			.bar:nth-child(5)  { 
+			.bar:nth-child(5)  {
 				left: 80px;
 			}
-			.bar:nth-child(6)  { 
+			.bar:nth-child(6)  {
 				left: 100px;
 			}
-			.bar:nth-child(7)  { 
+			.bar:nth-child(7)  {
 				left: 120px;
 			}
-			.bar:nth-child(8)  { 
+			.bar:nth-child(8)  {
 				left: 140px;
 			}
-			.bar:nth-child(9)  { 
+			.bar:nth-child(9)  {
 				left: 160px;
 			}
-			.bar:nth-child(10) { 
+			.bar:nth-child(10) {
 				left: 180px;
 			}
 		}
@@ -161,4 +161,3 @@ main {
 	}
 
 }
-

@@ -6,28 +6,28 @@
 html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
 	-webkit-box-sizing: inherit;
 	-moz-box-sizing: inherit;
-	box-sizing: inherit; 
+	box-sizing: inherit;
 }
 img,
 iframe {
 	vertical-align: middle;
-	max-width: 100%; 
+	max-width: 100%;
 }
 body {
 	background-color: $primary;
 }
-ul,li { 
+ul,li {
 	list-style-type: none;
 	list-style-position:inside;
 	margin:0;
-	padding:0; 
+	padding:0;
 }
 
 h1, h2, h3, p {
